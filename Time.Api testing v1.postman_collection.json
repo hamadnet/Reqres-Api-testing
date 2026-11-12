@@ -1,0 +1,344 @@
+{
+  "info": {
+    "_postman_id": "d735bdda-5257-4a05-b5f2-b5f09d80f7ea",
+    "name": "Time.Api testing v1",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "49835442",
+    "_collection_link": "https://go.postman.co/collection/49835442-d735bdda-5257-4a05-b5f2-b5f09d80f7ea?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Time",
+      "item": [
+        {
+          "name": "Current unix timestamp in microseconds",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://timeapi.io/api/v1/time/current/unix_us",
+              "protocol": "https",
+              "host": [
+                "timeapi",
+                "io"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "time",
+                "current",
+                "unix_us"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Current unix timestamp in milliseconds",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://timeapi.io/api/v1/time/current/unix_ms",
+              "protocol": "https",
+              "host": [
+                "timeapi",
+                "io"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "time",
+                "current",
+                "unix_ms"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Current unix timestamp",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://timeapi.io/api/v1/time/current/unix",
+              "protocol": "https",
+              "host": [
+                "timeapi",
+                "io"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "time",
+                "current",
+                "unix"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Current unix timestamp in nanoseconds",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://timeapi.io/api/v1/time/current/unix_ns",
+              "protocol": "https",
+              "host": [
+                "timeapi",
+                "io"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "time",
+                "current",
+                "unix_ns"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Current UTC time",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://timeapi.io/api/v1/time/current/utc",
+              "protocol": "https",
+              "host": [
+                "timeapi",
+                "io"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "time",
+                "current",
+                "utc"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "timezone",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://timeapi.io/api/v1/time/current/zone?timezone=Europe%2FAmsterdam",
+              "protocol": "https",
+              "host": [
+                "timeapi",
+                "io"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "time",
+                "current",
+                "zone"
+              ],
+              "query": [
+                {
+                  "key": "timezone",
+                  "value": "Europe%2FAmsterdam"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ipAddress",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://timeapi.io/api/v1/time/current/ip?ipAddress=127.0.0.1",
+              "protocol": "https",
+              "host": [
+                "timeapi",
+                "io"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "time",
+                "current",
+                "ip"
+              ],
+              "query": [
+                {
+                  "key": "ipAddress",
+                  "value": "127.0.0.1"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "latitude",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://timeapi.io/api/v1/time/current/coordinate?latitude=38.9&longitude=-77.03",
+              "protocol": "https",
+              "host": [
+                "timeapi",
+                "io"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "time",
+                "current",
+                "coordinate"
+              ],
+              "query": [
+                {
+                  "key": "latitude",
+                  "value": "38.9"
+                },
+                {
+                  "key": "longitude",
+                  "value": "-77.03"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Time Zone",
+      "item": [
+        {
+          "name": "List of IANA time zones",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://timeapi.io/api/v1/timezone/availabletimezones",
+              "protocol": "https",
+              "host": [
+                "timeapi",
+                "io"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "timezone",
+                "availabletimezones"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Time zone info",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://timeapi.io/api/v1/timezone/zone?timeZone=Europe%2FAmsterdam",
+              "protocol": "https",
+              "host": [
+                "timeapi",
+                "io"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "timezone",
+                "zone"
+              ],
+              "query": [
+                {
+                  "key": "timeZone",
+                  "value": "Europe%2FAmsterdam"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Time Zone info by coordinate",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://timeapi.io/api/v1/timezone/coordinate?latitude=52.3667&longitude=4.8945",
+              "protocol": "https",
+              "host": [
+                "timeapi",
+                "io"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "timezone",
+                "coordinate"
+              ],
+              "query": [
+                {
+                  "key": "latitude",
+                  "value": "52.3667"
+                },
+                {
+                  "key": "longitude",
+                  "value": "4.8945"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Health",
+      "item": [
+        {
+          "name": "Health Check",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://timeapi.io/api/health/check",
+              "protocol": "https",
+              "host": [
+                "timeapi",
+                "io"
+              ],
+              "path": [
+                "api",
+                "health",
+                "check"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
